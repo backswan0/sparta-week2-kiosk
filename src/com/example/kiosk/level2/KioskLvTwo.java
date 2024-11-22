@@ -42,13 +42,6 @@ public class KioskLvTwo {
         TODO [B] 지금도 좋지만 printMenu에 index를 넣을 순 없을까?
          */
 
-
-        // [트러블 슈팅]
-        // 아무리 출력해도 1,2,3,4,5가 아닌 1,1,1,1,1//2,2,2,2,2가 나온 이유
-        for (MenuItem eachItem : menuItems) {
-            eachItem.printMenu();
-        }
-
         for (MenuItem eachItem : menuItems) {
             eachItem.printMenu();
         }
