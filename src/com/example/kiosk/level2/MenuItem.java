@@ -17,4 +17,8 @@ public class MenuItem {
     }
 
     // 3. 메서드
+    // [step 3]에 해당하는 메서드로 출력 기능만 수행
+    public void printMenu () {
+        System.out.println(this.name + "     | W " +this.price+" | " + this.description);
+    }
 }
