@@ -2,7 +2,7 @@ package com.example.kiosk;
 /*
 주석 총 5개 [1] - [5]
  */
-// TODO 총 2개 [A] - [B]
+// TODO 총 3개 [A] - [C]
 
 import java.util.*;
 
@@ -108,5 +108,6 @@ public class KioskLvOne {
             }
         }
         // TODO [B] print() 메서드 말고 가격을 고칠 수 있는 방법은 없을까?
+        // TODO [C] 동작은 문제가 없으나 문구가 너무 빨리 나온다. 강의 5-6에 나오는 sleep()를 더 집중해서 들어야겠다.
     }
 }
