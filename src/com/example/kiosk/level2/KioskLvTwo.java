@@ -2,7 +2,7 @@ package com.example.kiosk.level2;
 /*
 주석 총 1개 [1] ~
  */
-// TODO 총 1개 [A]
+// TODO 총 2개 [B]
 // 주석 총 1개 (1)
 
 import java.util.*;
@@ -19,20 +19,30 @@ public class KioskLvTwo {
 
         // (1) add() 메서드 대신 한꺼번에 저장하고 싶어서 Collections.addAll() 메서드 사용
         Collections.addAll(menuItems, itemOne, itemTwo, itemThree, itemFour, itemFive);
+        // TODO [A] add() 메서드를 반복문으로 돌려서 저장할 수는 없을까?
 
         /*
         [1] 객체 지향으로 [ GRILL&THRILL MENU ]의 각 메뉴를 출력해보자!
         [step 1] 반복문을 사용하여 List에서 값을 하나씩 꺼내기
         [step 2] 꺼낸 값의 name,price, description을 꺼내서 출력하기
-         */
         for (MenuItem eachItem : menuItems) {
             System.out.println(eachItem.name + "     | W "+ eachItem.price + " | " + eachItem.description);
         }
         System.out.println("0. 종료     | 종료");
+         */
 
         /*
         [step 3] menuItem 클래스를 이용하여 step 2 출력하기
         [보충 설명] step 2는 메인에서 바로 출력하는 방식이었음
          */
+        for (MenuItem eachItem : menuItems) {
+            eachItem.printMenu();
+        }
+        System.out.println("0. 종료     | 종료");
+        // TODO [B] 처음엔 향상된 for문 안에 if문과 else문을 사용했다.
+        //          문제는 리스트가 추가됐을 때 종료 문구가 맨 마지막에 나오지 않아 번거로웠다.
+        //          이에, 지금처럼 반복문이 끝나는 시점에 종료 문구를 출력해서 해결했다.
+        //          이 방법은 먼저 진도를 나간 팀원분이 제안해주었는데, 너무 복잡하게 생각하는 게 아닌가 싶다.
+        //          구성을 복잡하게 생각하지 않을 방법이 뭐가 있을지 고민이 된다.
     }
 }
