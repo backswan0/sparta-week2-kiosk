@@ -1,10 +1,12 @@
 package com.example.kiosk.level2;
-
-import java.util.*;
+// 주석 총 2개 [1] - [2]
 
 public class MenuItem {
 
+    /*
+    [1] private int menuNum이 없어도 파라미터 int menuNum을 활용하면 됨
     private int menuNum;
+     */
     private String name;
     private double price;
     private String description;
@@ -15,9 +17,13 @@ public class MenuItem {
         this.description = description;
     }
 
-    public void getMenuItem(int index) {
-        this.menuNum = index;
+    public void getMenuItem(int menuNum) {
+        /*
+        [2] [1]과 같은 이유로 수정함. 주석 처리한 이유는 복습을 위해
+        this.menuNum = menuNum;
         System.out.println(this.menuNum + ". " + this.name + "     | W " + this.price + " | " + this.description);
+         */
+        System.out.println(menuNum + ". " + this.name + "     | W " + this.price + " | " + this.description);
     }
 
     public void getChosenItem() {
