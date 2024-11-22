@@ -33,13 +33,27 @@ public class KioskLvTwo {
 
         /*
         [step 3] menuItem 클래스를 이용하여 step 2 출력하기
-        [보충 설명] step 2는 메인에서 바로 출력하는 방식이었음
+        int index = 1;
+
+        for (MenuItem eachItem : menuItems) {
+             System.out.print((index++)+". ");
+             eachItem.printMenu();
+        }
+        TODO [B] 지금도 좋지만 printMenu에 index를 넣을 순 없을까?
          */
+
+
+        // [트러블 슈팅]
+        // 아무리 출력해도 1,2,3,4,5가 아닌 1,1,1,1,1//2,2,2,2,2가 나온 이유
+        for (MenuItem eachItem : menuItems) {
+            eachItem.printMenu();
+        }
+
         for (MenuItem eachItem : menuItems) {
             eachItem.printMenu();
         }
         System.out.println("0. 종료     | 종료");
-        // TODO [B] 처음엔 향상된 for문 안에 if문과 else문을 사용했다.
+        // TODO [C] 처음엔 향상된 for문 안에 if문과 else문을 사용했다.
         //          문제는 리스트가 추가됐을 때 종료 문구가 맨 마지막에 나오지 않아 번거로웠다.
         //          이에, 지금처럼 반복문이 끝나는 시점에 종료 문구를 출력해서 해결했다.
         //          이 방법은 먼저 진도를 나간 팀원분이 제안해주었는데, 너무 복잡하게 생각하는 게 아닌가 싶다.
