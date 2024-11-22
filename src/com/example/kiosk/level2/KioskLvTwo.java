@@ -6,6 +6,9 @@ import java.util.*;
 
 public class KioskLvTwo {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println();
+        System.out.println("[ GRILL&THRILL MENU ]");
         List<MenuItem> menuItems = new ArrayList<>();
 
         MenuItem itemOne = new MenuItem("BasicBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거");
@@ -30,5 +33,32 @@ public class KioskLvTwo {
             어떻게 하면 좀 더 간단하게 생각할 수 있을지 고민이 된다.
          */
 
+        System.out.println();
+        System.out.println("메뉴판에서 원하는 햄버거 번호를 입력해 주세요.");
+        System.out.print("만약 종료를 원하신다면 0을 입력해 주세요: ");
+        int menuNumber = sc.nextInt();
+        System.out.println();
+
+        // 미션
+        // switch-case문을 쓰지 않고 컬렉션에서 바로 꺼내서 해보기
+        // 힌트.......!!!!
+        // 리스트는 menuNumber를 인덱스로...! 써보자...!
+        switch (menuNumber) {
+            case 1:
+                itemOne.getChosenItem();
+                break;
+
+            case 2:
+                itemTwo.getChosenItem();
+                break;
+
+            case 3:
+                itemThree.getChosenItem();
+                break;
+
+            case 4:
+                itemFour.getChosenItem();
+                break;
+        }
     }
 }

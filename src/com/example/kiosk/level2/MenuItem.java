@@ -15,8 +15,13 @@ public class MenuItem {
         this.description = description;
     }
 
-    public void getMenuItem (int index) {
-        this.menuNum=index;
-        System.out.println(this.menuNum+". "+this.name + "     | W " +this.price+" | " + this.description);
+    public void getMenuItem(int index) {
+        this.menuNum = index;
+        System.out.println(this.menuNum + ". " + this.name + "     | W " + this.price + " | " + this.description);
+    }
+
+    public void getChosenItem() {
+        System.out.println(this.name + " 1개가 선택되었습니다.");
+        System.out.println("가격은 " + (int)(this.price * 1000) + "원입니다.");
     }
 }
