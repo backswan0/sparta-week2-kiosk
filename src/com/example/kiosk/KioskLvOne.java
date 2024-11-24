@@ -2,7 +2,7 @@ package com.example.kiosk;
 /*
 주석 총 5개 [1] - [5]
  */
-// TODO 총 3개 [A] - [C]
+// TODO 총 4개 [A] - [D]
 
 import java.util.*;
 
@@ -36,12 +36,14 @@ public class KioskLvOne {
         */
         String[][] hamburgerMenu =
                 {
-                        {"1. ", "BasicBurger", "   | W ", priceString[0], " | ", "토마토, 양상추, 쉑소스가 토핑된 치즈버거"},
-                        {"2. ", "GrilledThrill", "   | W ", priceString[1], " | ", "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거"},
-                        {"3. ", "Cheeseburger", "   | W ", priceString[2], " | ", "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"},
-                        {"4. ", "Hamburger", "   | W ", priceString[3], " | ", "비프패티를 기반으로 야채가 들어간 기본버거"},
-                        {"0. ", "종료", "    | ", "종료"}
+                        {"1. ", "BasicBurger", "      | W ", priceString[0], " | ", "토마토, 양상추, 쉑소스가 토핑된 치즈버거"},
+                        {"2. ", "GrilledThrill", "    | W ", priceString[1], " | ", "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거"},
+                        {"3. ", "Cheeseburger", "     | W ", priceString[2], " | ", "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"},
+                        {"4. ", "Hamburger", "        | W ", priceString[3], " | ", "비프패티를 기반으로 야채가 들어간 기본버거"},
+                        {"0. ", "종료", "              | ", "종료"}
                 };
+        // TODO [A] "      | W " 부분마다 일일이 띄어쓰기를 다르게 하여 줄을 맞추었다.
+        //          줄을 맞출 수 있는 다른 방법이 있는지 궁금하다.
 
         for (int i = 0; i < hamburgerMenu.length; i++) {
             for (int j = 0; j < hamburgerMenu[i].length; j++) {
@@ -49,7 +51,7 @@ public class KioskLvOne {
             }
             System.out.println();
         }
-        // TODO [A] 2차원 배열보다 간편한 방식이 있는지 궁금하다.
+        // TODO [B] 2차원 배열보다 간편한 방식이 있는지 궁금하다.
 
         boolean flag = true;
         while (flag) {
@@ -107,7 +109,7 @@ public class KioskLvOne {
                     System.exit(0);
             }
         }
-        // TODO [B] print() 메서드 말고 가격을 고칠 수 있는 방법은 없을까?
-        // TODO [C] 동작은 문제가 없으나 문구가 너무 빨리 나온다. 강의 5-6에 나오는 sleep()를 더 집중해서 들어야겠다.
+        // TODO [C] print() 메서드 말고 가격을 고칠 수 있는 방법은 없을까?
+        // TODO [D] 동작은 문제가 없으나 문구가 너무 빨리 나온다. 강의 5-6에 나오는 sleep()를 더 집중해서 들어야겠다.
     }
 }
