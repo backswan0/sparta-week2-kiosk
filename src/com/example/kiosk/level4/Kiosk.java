@@ -1,5 +1,5 @@
 package com.example.kiosk.level4;
-// 주석 총 2개 [1] - [2]
+// 주석 총 3개 [1] - [3]
 
 import java.util.*;
 
@@ -35,8 +35,10 @@ public class Kiosk {
         inputNumber = sc.nextInt();
         if (inputNumber == 0) {
             System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
+            System.exit(0);
         } else if (inputNumber > this.list.size()) {
             System.out.println("[MAIN MENU]에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
+            System.exit(0);
         } else {
             int j = inputNumber - 1;
             this.list.get(j).displayAllMenuItems();
@@ -47,10 +49,12 @@ public class Kiosk {
         inputNumber = sc.nextInt();
         if (inputNumber == 0) {
             System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
-        } else if (inputNumber > this.list.get(inputNumber - 1).menuItemList.size()) {
+            System.exit(0);
+        } else if (inputNumber > this.list.get(inputNumber-1).menuItemList.size()) {
             System.out.println("메뉴에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
+            System.exit(0);
         } else {
-            System.out.println("사용자가 선택한 MenuItem이 출력될 부분으로 구현 중입니다.");
+            System.out.println("사용자가 선택한 MenuItem이 출력될 부분으로, 현재 구현 중입니다.");
         }
     }
 }
