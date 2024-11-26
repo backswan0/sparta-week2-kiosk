@@ -31,6 +31,7 @@ public class Kiosk {
         System.out.println();
 
         System.out.print("[MAIN MENU]에서 원하는 메뉴를 골라주세요. 0을 누르면 프로그램이 종료됩니다: ");
+        int j = 0;
         int inputNumber;
         inputNumber = sc.nextInt();
         if (inputNumber == 0) {
@@ -40,7 +41,7 @@ public class Kiosk {
             System.out.println("[MAIN MENU]에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
             System.exit(0);
         } else {
-            int j = inputNumber - 1;
+            j = inputNumber - 1;
             this.list.get(j).displayAllMenuItems();
         }
 
@@ -50,7 +51,7 @@ public class Kiosk {
         if (inputNumber == 0) {
             System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
             System.exit(0);
-        } else if (inputNumber > this.list.get(inputNumber-1).menuItemList.size()) {
+        } else if (inputNumber > this.list.get(j).menuItemList.size()) {
             System.out.println("메뉴에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
             System.exit(0);
         } else {
