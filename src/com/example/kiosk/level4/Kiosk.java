@@ -31,23 +31,23 @@ public class Kiosk {
         System.out.println();
 
         System.out.print("[MAIN MENU]에서 원하는 메뉴를 골라주세요. 0을 누르면 프로그램이 종료됩니다: ");
-        int numberOfChoice;
-        numberOfChoice = sc.nextInt();
-        if (numberOfChoice == 0) {
+        int inputNumber;
+        inputNumber = sc.nextInt();
+        if (inputNumber == 0) {
             System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
-        } else if (numberOfChoice > this.list.size()) {
+        } else if (inputNumber > this.list.size()) {
             System.out.println("[MAIN MENU]에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
         } else {
-            int j = numberOfChoice - 1;
+            int j = inputNumber - 1;
             this.list.get(j).displayAllMenuItems();
         }
 
         System.out.println();
         System.out.print("원하는 메뉴의 번호를 입력해 주세요. 0을 누르면 프로그램이 종료됩니다: ");
-        numberOfChoice = sc.nextInt();
-        if (numberOfChoice == 0) {
+        inputNumber = sc.nextInt();
+        if (inputNumber == 0) {
             System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
-        } else if (numberOfChoice > this.list.get(numberOfChoice - 1).menuItemList.size()) {
+        } else if (inputNumber > this.list.get(inputNumber - 1).menuItemList.size()) {
             System.out.println("메뉴에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
         } else {
             System.out.println("사용자가 선택한 MenuItem이 출력될 부분으로 구현 중입니다.");
