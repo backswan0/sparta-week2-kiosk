@@ -13,7 +13,7 @@ public class MenuItem {
     }
 
     public void getMenuInfo(int menuNum) {
-        System.out.print(menuNum + ". " + this.name);
+        System.out.print(menuNum + 1 + ". " + this.name);
         System.out.print("      | W " + this.price);
         System.out.println(" | " + this.description);
     }
