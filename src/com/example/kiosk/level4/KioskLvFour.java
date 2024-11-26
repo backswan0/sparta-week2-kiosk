@@ -1,13 +1,13 @@
 package com.example.kiosk.level4;
 
 import java.util.*;
+// 장바구니 기능을 추가하려면 List가 좋을까, ArrayList가 좋을까?
 
 public class KioskLvFour {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("[MAIN MENU]");
         List<Menu> menuList = new ArrayList<>();
-        // 장바구니 기능을 추가하려면 List가 좋을까, ArrayList가 좋을까?
 
         Menu menuBurger = new Menu("Burgers",
                 List.of(
@@ -42,10 +42,8 @@ public class KioskLvFour {
 
         Collections.addAll(menuList, menuBurger, menuDrink, menuSide);
 
-        for (int i = 0; i < menuList.size(); i++) {
-            int numberMain = i + 1;
-            System.out.println(numberMain + ". " + menuList.get(i).name);
-        }
-
+        // 이게 왜 작동할까...?
+        // It works....why????
+        menuList.get(0).test(menuList);
     }
 }
