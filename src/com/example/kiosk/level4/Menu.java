@@ -14,4 +14,12 @@ public class Menu {
     }
 
     // 3. 기능
+    // 버거를 고르면 버거들만 쭉 나오는 메서드 추가해야 함...!
+    public void getMenuItem () {
+        int i;
+        for (i = 0; i<this.menuItemList.size(); i++) {
+            this.menuItemList.get(i).getMenuInfo(i);
+        }
+
+    }
 }
