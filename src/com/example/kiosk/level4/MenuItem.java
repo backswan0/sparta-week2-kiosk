@@ -2,19 +2,13 @@ package com.example.kiosk.level4;
 
 public class MenuItem {
 
-    private String name;
-    private double price;
-    private String description;
+    public String nameOfMenuItem;
+    public double costOfMenuItem;
+    public String infoOfMenuItem;
 
-    public MenuItem(String name, double price, String description) {
-        this.name = name;
-        this.price = price;
-        this.description = description;
-    }
-
-    public void getMenuInfo(int menuNum) {
-        System.out.print(menuNum + 1 + ". " + this.name);
-        System.out.print("      | W " + this.price);
-        System.out.println(" | " + this.description);
+    public MenuItem(String nameOfMenuItem, double costOfMenuItem, String infoOfMenuItem) {
+        this.nameOfMenuItem = nameOfMenuItem;
+        this.costOfMenuItem = costOfMenuItem;
+        this.infoOfMenuItem = infoOfMenuItem;
     }
 }
