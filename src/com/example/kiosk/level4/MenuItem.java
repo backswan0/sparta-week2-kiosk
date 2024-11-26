@@ -11,4 +11,11 @@ public class MenuItem {
         this.costOfMenuItem = costOfMenuItem;
         this.infoOfMenuItem = infoOfMenuItem;
     }
+
+    public void displayEachMenuItem(int indexOfMenuItem) {
+        int numberOfMenuItem = indexOfMenuItem + 1;
+        System.out.print(numberOfMenuItem + ". " + this.nameOfMenuItem);
+        System.out.print("      | W " + this.costOfMenuItem);
+        System.out.println(" | " + this.infoOfMenuItem);
+    }
 }
