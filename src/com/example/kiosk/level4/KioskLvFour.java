@@ -26,8 +26,8 @@ public class KioskLvFour {
 
         Collections.addAll(menuList, menuBurger, menuDrink, menuSide);
 
-        Kiosk test = new Kiosk(menuList);
+        Kiosk testPrintingMainMenu = new Kiosk(menuList);
 
-        test.start();
+        testPrintingMainMenu.start();
     }
 }
