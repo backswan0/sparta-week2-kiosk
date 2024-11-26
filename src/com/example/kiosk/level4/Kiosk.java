@@ -17,17 +17,31 @@ public class Kiosk {
         this.listInMain = nameOfListInMain;
     }
 
+    /*
+    [2] 모든 멤버 변수 앞에 this를 붙인 이유
+    혹시라도 지역 변수와 헷갈릴까 봐 더 확실히 구분하고자
+     */
     public void start() {
-        for (int indexOfMenu = 0; indexOfMenu < listInMain.size(); indexOfMenu++) {
-            // [2] 인덱스와 구분하고자 지역 변수를 새로 선언 및 초기화함
-            String nameOfEachMenu = listInMain.get(indexOfMenu).nameOfMenu;
-            int numberOfEachMenu = indexOfMenu + 1;
-            System.out.println(numberOfEachMenu + ". " + nameOfEachMenu);
+        int i;
+        for (i = 0; i < this.listInMain.size(); i++) {
+            // [3] 인덱스와 구분하고자 지역 변수를 새로 선언 및 초기화함
+            int numberOfMenu = i + 1;
+            String nameOfMenu = this.listInMain.get(i).nameOfMenu;
+            System.out.println(numberOfMenu + ". " + nameOfMenu);
         }
         System.out.println("0. 종료           | 종료");
 
         System.out.println();
+
         System.out.print("[MAIN MENU]에서 원하는 메뉴를 골라주세요. 0을 누르면 프로그램이 종료됩니다: ");
-        int number = sc.nextInt();
+        int numberOfSelectedMenu = sc.nextInt();
+        if (numberOfSelectedMenu == 0) {
+            System.out.println("0을 입력하셨습니다. 프로그램을 종료합니다.");
+        } else if (numberOfSelectedMenu > this.listInMain.size()) {
+            System.out.println("[MAIN MENU]에 없는 번호를 입력하셨습니다. 프로그램을 종료합니다.");
+        } else {
+            int j = numberOfSelectedMenu - 1;
+            this.listInMain.get(j).displayAllMenuItems();
+        }
     }
 }
