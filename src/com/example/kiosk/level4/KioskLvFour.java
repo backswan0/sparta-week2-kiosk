@@ -5,7 +5,6 @@ import java.util.*;
 public class KioskLvFour {
     public static void main(String[] args) {
         System.out.println();
-        System.out.println("[MAIN MENU]");
         List<Menu> allMenus = new ArrayList<>();
 
         Menu menuBurger = new Menu("Burgers", new ArrayList<>());
