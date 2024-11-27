@@ -19,4 +19,9 @@ public class MenuItem {
         System.out.print("      | W " + this.menuItemCost);
         System.out.println(" | " + this.menuItemInfo);
     }
+
+    public void displaySelectedMenuItem() {
+        System.out.println(this.menuItemName + " 1개가 선택되었습니다.");
+        System.out.println("가격은 "+(int)(this.menuItemCost*1000) + "원입니다.");
+    }
 }
