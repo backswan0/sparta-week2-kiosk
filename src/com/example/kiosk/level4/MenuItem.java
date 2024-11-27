@@ -2,27 +2,20 @@ package com.example.kiosk.level4;
 
 public class MenuItem {
 
-    public String menuItemName;
-    public double menuItemCost;
-    public String menuItemInfo;
+    public String name;
+    public double cost;
+    public String info;
 
-    public MenuItem(String menuItemName, double menuItemCost, String menuItemInfo) {
-        this.menuItemName = menuItemName;
-        this.menuItemCost = menuItemCost;
-        this.menuItemInfo = menuItemInfo;
+    public MenuItem(String name, double cost, String info) {
+        this.name = name;
+        this.cost = cost;
+        this.info = info;
     }
 
-    public void displayEachMenuItem(int menuItemIndex) {
-        int menuItemNumber = menuItemIndex + 1;
-        System.out.print(menuItemNumber + ". " + this.menuItemName);
-        System.out.print("      | W " + this.menuItemCost);
-        System.out.println(" | " + this.menuItemInfo);
-    }
-
-    public void displaySelectedMenuItem() {
-        System.out.println();
-        System.out.println(this.menuItemName + " 1개가 선택되었습니다.");
-        System.out.println("가격은 "+(int)(this.menuItemCost*1000) + "원입니다.");
-        System.out.println();
+    public void displayEachItem(int itemIndex) {
+        int itemNumber = itemIndex + 1;
+        System.out.print(itemNumber + ". " + name);
+        System.out.print("      | W " + cost);
+        System.out.println(" | " + info);
     }
 }
