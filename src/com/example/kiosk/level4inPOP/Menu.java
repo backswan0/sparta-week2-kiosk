@@ -1,4 +1,4 @@
-package com.example.kiosk.level4;
+package com.example.kiosk.level4inPOP;
 // TODO 총 1개 [A]
 import java.util.*;
 
