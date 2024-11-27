@@ -13,7 +13,6 @@ public class MenuItem {
     }
 
     public void displayEachMenuItem(int menuItemIndex) {
-        // [1] Menu의 i가 int menuItemIndex에 해당한다.
         int menuItemNumber = menuItemIndex + 1;
         System.out.print(menuItemNumber + ". " + this.menuItemName);
         System.out.print("      | W " + this.menuItemCost);
@@ -21,7 +20,9 @@ public class MenuItem {
     }
 
     public void displaySelectedMenuItem() {
+        System.out.println();
         System.out.println(this.menuItemName + " 1개가 선택되었습니다.");
         System.out.println("가격은 "+(int)(this.menuItemCost*1000) + "원입니다.");
+        System.out.println();
     }
 }
