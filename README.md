@@ -20,7 +20,7 @@
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
   - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
+- **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 2️⃣ Level 2. level2.package
 - **Characteristics**
@@ -30,7 +30,7 @@
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
   - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
+- **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 3️⃣ Level 3. level3.package
 - **Characteristics**
@@ -40,7 +40,7 @@
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
   - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
+- **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 4️⃣ Level 4. level4.package
 - **Characteristics**
@@ -50,7 +50,7 @@
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
   - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives two integers from the user, one for main menu index and the other for menu item idex as a subcategory
+- **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
 
 ### 5️⃣ Level 5. level5.package
 - **Characteristics**
@@ -60,7 +60,7 @@
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
   - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives two integers from the user, one for main menu index and the other for menu item idex as a subcategory
+- **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
 
 ## 📜 More Information
 - [Visit Development Journal](https://writingforever162.tistory.com)
