@@ -3,7 +3,7 @@ package com.example.kiosk.level4;
 // TODO 총 2개 [A] - [B]
 import java.util.*;
 
-public class KioskLvFour {
+public class MainLevelFour {
     public static void main(String[] args) {
         System.out.println();
         List<Menu> allMenus = new ArrayList<>();
