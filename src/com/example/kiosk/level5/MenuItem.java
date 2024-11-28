@@ -15,7 +15,10 @@ public class MenuItem {
         this.info = info;
     }
 
-    // TODO [B] 사용자에게 보여준다는 의미로 'display'를 'get'으로 바꾸지 않았는데, 바꾸어야 할까?
+    /*
+    TODO [B]
+     사용자에게 보여준다는 의미로 'display'를 'get'으로 바꾸지 않았는데, 바꾸어야 할까?
+     */
     public void displayEachItem(int itemIndex) {
         int itemNumber = itemIndex + 1;
         System.out.println(itemNumber + ". " + name + "      | W " + cost + " | " + info);

@@ -1,5 +1,5 @@
 package com.example.kiosk.level5;
-// TODO 총 2개 [A] - [B]
+// TODO 총 1개 [A]
 // 주석 총 1개 [1]
 
 import java.util.*;
@@ -37,8 +37,12 @@ public class Kiosk {
         }
     }
 
-    // TODO [A] 사용자에게 보여준다는 의미로 'display'를 'get'으로 바꾸지 않았는데, 바꾸어야 할까?
-    public void displayMenus() {
+    /*
+    TODO [A]
+     해설 강의를 듣다가 어느 부분에서 private을 써야 하는지 깨닫고, 아래의 두 메서드를 private으로 설정했다.
+     외부에서 접근하면 안 되는 부분은 private 접근 제어자를 쓰도록 앞으로 더 연습해야겠다.
+     */
+    private void displayMenus() {
         System.out.println("[ GRILL&THRILL MAIN MENU ]");
         for (int j = 0; j < menus.size(); j++) {
             int menuNumber = j + 1;
@@ -48,7 +52,7 @@ public class Kiosk {
         System.out.println("0. 종료           | 종료");
     }
 
-    public void inputNumber() {
+    private void inputNumber() {
         System.out.println();
         System.out.print("원하는 메뉴의 번호를 입력해 주세요: ");
         inputNumber = sc.nextInt();
