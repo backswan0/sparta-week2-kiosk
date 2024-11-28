@@ -17,8 +17,8 @@
   - Number of classes defined in Java: 0
   - Created using procedural-oriented programming
 - **Features** 
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
-  - Informs the user of the selected menu item
+  - Displays the entire burger menu to the user including the name, cost, and brief information
+  - Informs the user of the selected menu item 
   - Exits the program if zero or a number outside the menu index range is input
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
@@ -29,6 +29,7 @@
 - **Features**
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
+    - A single instance of the `MenuItem` class handles display and manages the list of menu items
   - Exits the program if zero or a number outside the menu index range is input
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
