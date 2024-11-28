@@ -67,8 +67,8 @@
   - Number of classes defined in Java: 3
   - Class names: `Kiosk`, `MenuItem`, `Menu` 
 - **Features**
-- Provides the same functions as level 4
-- Includes private access modifiers, and getter and setter methods for better information security
+  - Provides the same functions as level 4
+  - Includes private access modifiers, and getter and setter methods for better information security
 - **Usage**: Receives two integers from the user—one for the main menu index and the other for the item index
 
 ## 📜 More Information
