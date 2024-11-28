@@ -37,7 +37,7 @@ public class Menu {
             System.out.println("메인으로 돌아갑니다.");
             System.out.println();
         } else if (size < number) {
-            System.out.println("메뉴판에 없는 번호를 입력하셨습니다.메인으로 돌아갑니다.");
+            System.out.println("메뉴판에 없는 번호를 입력하셨습니다. 메인으로 돌아갑니다.");
             System.out.println();
         } // [2] 안내 문구와 메뉴 사이에 한 줄씩 여백을 두고 싶어서 System.out.println(); 추가함
     }

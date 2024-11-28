@@ -3,7 +3,7 @@ package com.example.kiosk.level5;
 import java.util.*;
 
 public class Menu {
-    private List<MenuItem> items;
+    private final List<MenuItem> items;
     private String menuName;
 
     public Menu(String menuName, List<MenuItem> items) {
@@ -35,7 +35,7 @@ public class Menu {
             System.out.println("메인으로 돌아갑니다.");
             System.out.println();
         } else if (size < number) {
-            System.out.println("메뉴판에 없는 번호를 입력하셨습니다.메인으로 돌아갑니다.");
+            System.out.println("메뉴판에 없는 번호를 입력하셨습니다. 메인으로 돌아갑니다.");
             System.out.println();
         }
     }

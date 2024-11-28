@@ -35,7 +35,7 @@ public class MainLevelTwo {
 
         while (true) {
             System.out.println();
-            System.out.println("메뉴판에서 원하는 햄버거 번호를 입력해 주세요.");
+            System.out.println("메뉴판에서 원하시는 햄버거 번호를 입력해 주세요.");
             System.out.print("만약 종료를 원하신다면 0을 입력해 주세요: ");
             int inputNumber = sc.nextInt();
 
@@ -43,7 +43,7 @@ public class MainLevelTwo {
             if (inputNumber == 0) {
                 System.out.println("0을 눌렀습니다. 프로그램을 종료합니다.");
                 break;
-            } else if ((0 <  inputNumber) && (inputNumber <= items.size())) {
+            } else if ((0 < inputNumber) && (inputNumber <= items.size())) {
                 /*
                 [2] 변수 index를 선언하고 초기화하여 사용한 이유
                 첫째, inputNumber와 구분하고자

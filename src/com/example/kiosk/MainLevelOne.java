@@ -78,28 +78,28 @@ public class MainLevelOne {
                 case 1:
                     System.out.println(hamburgers[0][1] + " 1개가 선택되었습니다.");
                     System.out.print("가격은 ");
-                    System.out.print((int)(price[0]*1000));
+                    System.out.print((int) (price[0] * 1000));
                     System.out.println("원입니다.");
                     break;
 
                 case 2:
                     System.out.println(hamburgers[1][1] + " 1개가 선택되었습니다.");
                     System.out.print("가격은 ");
-                    System.out.print((int)(price[1]*1000));
+                    System.out.print((int) (price[1] * 1000));
                     System.out.println("원입니다.");
                     break;
 
                 case 3:
                     System.out.println(hamburgers[2][1] + " 1개가 선택되었습니다.");
                     System.out.print("가격은 ");
-                    System.out.print((int)(price[2]*1000));
+                    System.out.print((int) (price[2] * 1000));
                     System.out.println("원입니다.");
                     break;
 
                 case 4:
                     System.out.println(hamburgers[3][1] + " 1개가 선택되었습니다.");
                     System.out.print("가격은 ");
-                    System.out.print((int)(price[3]*1000));
+                    System.out.print((int) (price[3] * 1000));
                     System.out.println("원입니다.");
                     break;
 
@@ -109,7 +109,7 @@ public class MainLevelOne {
                     break;
 
                 default:
-                    System.out.println("6 이상인 번호를 눌렀습니다. 번호를 다시 눌러주세요. 프로그램을 종료합니다.");
+                    System.out.println("메뉴 번호 외에 다른 숫자를 입력하셨습니다. 프로그램을 종료합니다.");
                     System.exit(0);
             }
         }

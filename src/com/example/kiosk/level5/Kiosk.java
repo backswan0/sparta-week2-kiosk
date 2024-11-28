@@ -1,12 +1,13 @@
 package com.example.kiosk.level5;
 // TODO 총 2개 [A] - [B]
+// 주석 총 1개 [1]
 
 import java.util.*;
 
 public class Kiosk {
-    //
-    private Scanner sc = new Scanner(System.in);
-    private List<Menu> menus;
+    // [1] 절대로 바뀌면 안 되는 부분이고, Scanner와 List는 다시 초기화 할 일이 없어서 final을 사용함
+    private final Scanner sc = new Scanner(System.in);
+    private final List<Menu> menus;
     private int inputNumber;
 
     public Kiosk(List<Menu> listName) {

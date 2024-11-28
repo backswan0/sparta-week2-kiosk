@@ -21,7 +21,7 @@ public class Kiosk {
 
         while (true) {
             System.out.println();
-            System.out.println("메뉴판에서 원하는 햄버거 번호를 입력해 주세요.");
+            System.out.println("메뉴판에서 원하시는 햄버거 번호를 입력해 주세요.");
             System.out.print("만약 종료를 원하신다면 0을 입력해 주세요: ");
             int inputNumber = sc.nextInt();
 
