@@ -19,7 +19,7 @@
 - **Features** 
   - Displays the entire burger menu to the user including the name, cost, and brief information
   - Informs the user of the selected menu item 
-  - Exits the program if zero or a number outside the menu index range is input
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 2️⃣ Level 2. level2.package
@@ -29,8 +29,8 @@
 - **Features**
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
-    - A single instance of the `MenuItem` class handles display and manages the list of menu items
-  - Exits the program if zero or a number outside the menu index range is input
+    - The `MenuItem` class handles display and manages the list of menu items
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 3️⃣ Level 3. level3.package
@@ -40,7 +40,10 @@
 - **Features**
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+    - The `MenuItem` class manages the list of menu items.
+    - The `Kiosk` class handles display using methods from the `MenuItem` class
+    - All kiosk functions is included in the `start()` method from the `Kiosk` class 
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
 ### 4️⃣ Level 4. level4.package
@@ -50,7 +53,7 @@
 - **Features**
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
 
 ### 5️⃣ Level 5. level5.package
@@ -60,7 +63,7 @@
 - **Features**
   - Displays the entire burger menu to the user including the name, cost, and brief information 
   - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
 
 ## 📜 More Information
