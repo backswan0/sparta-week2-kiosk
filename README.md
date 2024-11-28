@@ -12,7 +12,7 @@
 
 ## 🚀 Level
 
-### 1️⃣ Level 1. MainLevelOne.java
+### 1️⃣ MainLevelOne.java
 - **Characteristics**
   - Number of classes defined in Java: 0
   - Created using procedural-oriented programming
@@ -22,7 +22,7 @@
   - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 2️⃣ Level 2. level2.package
+### 2️⃣ level2.package
 - **Characteristics**
   - Number of classes defined in Java: 1
   - Class name: `MenuItem`
@@ -33,7 +33,7 @@
   - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 3️⃣ Level 3. level3.package
+### 3️⃣ level3.package
 - **Characteristics**
   - Number of classes defined in Java: 2
   - Class names: `MenuItem`, `Kiosk` 
@@ -46,7 +46,7 @@
   - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 4️⃣ Level 4. level4.package
+### 4️⃣ level4.package
 - **Characteristics**
   - Number of classes defined in Java: 3
   - Class names: `MenuItem`, `Kiosk`, `Menu` 
@@ -62,7 +62,7 @@
   - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives two integers from the user—one for the main menu index and the other for the item index
 
-### 5️⃣ Level 5. level5.package
+### 5️⃣ level5.package
 - **Characteristics**
   - Number of classes defined in Java: 3
   - Class names: `Kiosk`, `MenuItem`, `Menu` 
