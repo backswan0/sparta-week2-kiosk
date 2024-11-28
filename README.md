@@ -1,4 +1,4 @@
-# 🍔: Creating a Basic Kiosk Using Java
+# 🍔 Creating a Basic Kiosk Using Java
 
 ## 💻 Introduction
 - The project is an assignment to assess whether students have understood the online lecture.
