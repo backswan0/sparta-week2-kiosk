@@ -2,22 +2,22 @@ package com.example.kiosk.level2;
 
 public class MenuItem {
 
-    private String name;
-    private double price;
-    private String description;
+    public String name;
+    public double cost;
+    public String info;
 
-    public MenuItem(String name, double price, String description) {
+    public MenuItem(String name, double cost, String info) {
         this.name = name;
-        this.price = price;
-        this.description = description;
+        this.cost = cost;
+        this.info = info;
     }
 
-    public void getMenuInfo(int menuNum) {
-        System.out.println(menuNum + ". " + this.name + "     | W " + this.price + " | " + this.description);
+    public void displayMenuInfo(int menuNumber) {
+        System.out.println(menuNumber + ". " + name + "     | W " + cost + " | " + info);
     }
 
-    public void getEachItem() {
-        System.out.println(this.name + " 1개가 선택되었습니다.");
-        System.out.println("가격은 " + (int) (this.price * 1000) + "원입니다.");
+    public void displaySelectedMenu() {
+        System.out.println(name + " 1개가 선택되었습니다.");
+        System.out.println("가격은 " + (int) (cost * 1000) + "원입니다.");
     }
 }
