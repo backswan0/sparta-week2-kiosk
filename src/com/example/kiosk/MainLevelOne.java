@@ -6,7 +6,7 @@ package com.example.kiosk;
 
 import java.util.*;
 
-public class KioskLvOne {
+public class MainLevelOne {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println();
