@@ -3,6 +3,7 @@
 ## 💻 Introduction
 - The project is an assignment to assess whether students have understood the online lecture.
 - Each of the five kiosks is developed as a personal project.
+- All the kiosks are based on console user interfaces. 
   
 
 ## 📆 Development Period
@@ -12,32 +13,54 @@
 ## 🚀 Level
 
 ### 1️⃣ Level 1. MainLevelOne.java
-- **Characteristics**: Created without defining any classes in Java
-- **Features**: Supports four functions—addition, subtraction, multiplication, and division
-- **Usage**: Receives one operator and two integers from a user
+- **Characteristics**
+  - Number of classes defined in Java: 0
+  - Created using procedural-oriented programming
+- **Features** 
+  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Informs the user of the selected menu item
+  - Exits the program if zero or a number outside the menu index range is input
+- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
 
 ### 2️⃣ Level 2. level2.package
-- **Characteristics**: Created by defining a class named `Calculator` in Java
-- **Features**: Supports four functions—addition, subtraction, multiplication, and division
-  - Saves the result cumulatively after each calculation
-  - Provides an inquiry function via a getter method
-  - Allows deletion of the first element
-- **Usage**: Receives one operator and two integers from a user
+- **Characteristics**
+  - Number of classes defined in Java: 1
+  - Class name: `MenuItem`
+- **Features**
+  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Informs the user of the selected menu item
+  - Exits the program if zero or a number outside the menu index range is input
+- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
 
 ### 3️⃣ Level 3. level3.package
-- **Characteristics**: Created by defining five classes in Java—`Calculation`, `DataHandler`, `Ending`, `Num`, and `Op`
-- **Features**: Supports four functions—addition, subtraction, multiplication, and division
-- **Usage**: Receives one operator and two integers from a user
+- **Characteristics**
+  - Number of classes defined in Java: 2
+  - Class names: `Kiosk`, `MenuItem` 
+- **Features**
+  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Informs the user of the selected menu item
+  - Exits the program if zero or a number outside the menu index range is input
+- **Usage**: Receives an integer from the user, which points to the menu item that the user wants
 
 ### 4️⃣ Level 4. level4.package
-- **Characteristics**: Created by defining five classes in Java—`Calculation`, `DataHandler`, `Ending`, `Num`, and `Op`
-- **Features**: Supports four functions—addition, subtraction, multiplication, and division
-- **Usage**: Receives one operator and two integers from a user
+- **Characteristics**
+  - Number of classes defined in Java: 3
+  - Class names: `Kiosk`, `MenuItem`, `Menu` 
+- **Features**
+  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Informs the user of the selected menu item
+  - Exits the program if zero or a number outside the menu index range is input
+- **Usage**: Receives two integers from the user, one for main menu index and the other for menu item idex as a subcategory
 
 ### 5️⃣ Level 5. level5.package
-- **Characteristics**: Created by defining five classes in Java—`Calculation`, `DataHandler`, `Ending`, `Num`, and `Op`
-- **Features**: Supports four functions—addition, subtraction, multiplication, and division
-- **Usage**: Receives one operator and two integers from a user
+- **Characteristics**
+  - Number of classes defined in Java: 3
+  - Class names: `Kiosk`, `MenuItem`, `Menu` 
+- **Features**
+  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Informs the user of the selected menu item
+  - Exits the program if zero or a number outside the menu index range is input
+- **Usage**: Receives two integers from the user, one for main menu index and the other for menu item idex as a subcategory
 
 ## 📜 More Information
 - [Visit Development Journal](https://writingforever162.tistory.com)
