@@ -56,7 +56,7 @@
   - Informs the user of the selected item, including its name, cost, and a brief description
     - The `MenuItem` class manages the list of menu items
     - The `Kiosk` class handles input and display to the user by using methods from the `Menu` class
-      The `Menu` class handles display of menu items by using methods from the `MenuItem` class
+    - The `Menu` class handles display of menu items by using methods from the `MenuItem` class
     - All kiosk functions are included in the `start()` method of the `Kiosk` class
   - Provides the option to return to the main menu
   - Exits the program if the user inputs zero or a number outside the menu index range
