@@ -34,7 +34,7 @@ public class Menu {
             System.out.println("가격은 " + (int) (selectedItem.getCost() * 1000) + "원입니다.");
             System.out.println("메인으로 돌아갑니다.");
             System.out.println();
-        } else if (size < number) {
+        } else {
             System.out.println("메뉴판에 없는 번호를 입력하셨습니다. 메인으로 돌아갑니다.");
             System.out.println();
         }

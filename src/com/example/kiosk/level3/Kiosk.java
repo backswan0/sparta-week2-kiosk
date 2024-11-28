@@ -32,7 +32,7 @@ public class Kiosk {
                 System.out.println();
                 int index = inputNumber - 1;
                 items.get(index).displaySelectedMenu();
-            } else if (items.size() < inputNumber) {
+            } else {
                 System.out.println("메뉴 번호 외에 다른 숫자를 입력했습니다. 프로그램을 종료합니다.");
                 break;
             }

@@ -26,10 +26,6 @@ public class Kiosk {
                 break;
             } else if ((0 < inputNumber) && (inputNumber <= menus.size())) {
                 menus.get(i).displayAllItems();
-            } else if (menus.size() < inputNumber) {
-                System.out.println("메뉴판에 없는 번호를 입력하셨습니다. 메인으로 돌아갑니다. ");
-                System.out.println();
-                continue;
             } else {
                 System.out.println("메뉴판에 없는 번호를 입력하셨습니다. 메인으로 돌아갑니다. ");
                 System.out.println();
