@@ -1,27 +1,26 @@
 package com.example.kiosk.level3;
 // 주석 총 1개 [1]
-
+// TODO 총 1개 [A]
 public class MenuItem {
 
-    private String name;
-    private double price;
-    private String description;
+    // [1] 5단계 과제를 고려하여 4단계까지는 접근 제어자를 public으로 입력함
+    public String name;
+    public double cost;
+    public String info;
 
-    public MenuItem(String name, double price, String description) {
+    public MenuItem(String name, double cost, String info) {
         this.name = name;
-        this.price = price;
-        this.description = description;
+        this.cost = cost;
+        this.info = info;
     }
 
-    public void getMenuInfo(int menuNum) {
-        // [1] 각 멤버변수 수정이 쉽도록 print() 사용
-        System.out.print(menuNum + ". " + this.name);
-        System.out.print("      | W " + this.price);
-        System.out.println(" | " + this.description);
+    public void displayMenuInfo(int menuNumber) {
+        System.out.println(menuNumber + ". " + name + "      | W " + cost + " | " + info);
     }
+    // TODO [A] this.name의 길이와 상관 없이 어떻게 ||줄을 맞출 수 있을까?
 
-    public void getEachItem() {
-        System.out.println(this.name + " 1개가 선택되었습니다.");
-        System.out.println("가격은 " + (int)(this.price * 1000) + "원입니다.");
+    public void displaySelectedMenu() {
+        System.out.println(name + " 1개가 선택되었습니다.");
+        System.out.println("가격은 " + (int) (cost * 1000) + "원입니다.");
     }
 }
