@@ -51,7 +51,7 @@
   - Number of classes defined in Java: 3
   - Class names: `MenuItem`, `Kiosk`, `Menu` 
 - **Features**
-  - Displays the entire main menu to the user including the name—Burgers, Drinks, and Sides
+  - Displays the entire main menu to the user including the name—🍔Burgers, 🍹Drinks, and 🥗Sides
   - Displays the list of items within the selected category
   - Informs the user of the selected item, including its name, cost, and a brief description
     - The `MenuItem` class manages the list of menu items
