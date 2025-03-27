@@ -12,55 +12,64 @@
 
 ## 🚀 Level
 
-### 1️⃣ Level 1. MainLevelOne.java
+### 1️⃣ MainLevelOne.java
 - **Characteristics**
   - Number of classes defined in Java: 0
   - Created using procedural-oriented programming
 - **Features** 
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
-  - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+  - Displays the entire burger menu to the user including the name, cost, and a brief description
+  - Informs the user of the selected menu item 
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 2️⃣ Level 2. level2.package
+### 2️⃣ level2.package
 - **Characteristics**
   - Number of classes defined in Java: 1
   - Class name: `MenuItem`
 - **Features**
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Displays the entire burger menu to the user including the name, cost, and a brief description
   - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+    - The `MenuItem` class handles display and manages the list of menu items
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 3️⃣ Level 3. level3.package
+### 3️⃣ level3.package
 - **Characteristics**
   - Number of classes defined in Java: 2
-  - Class names: `Kiosk`, `MenuItem` 
+  - Class names: `MenuItem`, `Kiosk` 
 - **Features**
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
+  - Displays the entire burger menu to the user including the name, cost, and a brief information 
   - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
+    - The `MenuItem` class manages the list of menu items
+    - The `Kiosk` class handles input and display by using methods from the `MenuItem` class
+    - All kiosk functions are included in the `start()` method of the `Kiosk` class 
+  - Exits the program if the user inputs zero or a number outside the menu index range
 - **Usage**: Receives an integer from the user that corresponds to the menu item the user wants
 
-### 4️⃣ Level 4. level4.package
+### 4️⃣ level4.package
 - **Characteristics**
   - Number of classes defined in Java: 3
-  - Class names: `Kiosk`, `MenuItem`, `Menu` 
+  - Class names: `MenuItem`, `Kiosk`, `Menu` 
 - **Features**
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
-  - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
+  - Displays the entire main menu to the user including the title—🍔Burgers, 🍹Drinks, and 🥗Sides
+  - Displays the list of items within the selected category
+  - Informs the user of the selected item, including its name, cost, and a brief description
+    - The `MenuItem` class manages the list of menu items
+    - The `Kiosk` class handles input and display to the user by using methods from the `Menu` class
+    - The `Menu` class handles display of menu items by using methods from the `MenuItem` class
+    - All kiosk functions are included in the `start()` method of the `Kiosk` class
+  - Provides the option to return to the main menu
+  - Exits the program if the user inputs zero or a number outside the menu index range
+- **Usage**: Receives two integers from the user—one for the main menu index and the other for the item index
 
-### 5️⃣ Level 5. level5.package
+### 5️⃣ level5.package
 - **Characteristics**
   - Number of classes defined in Java: 3
   - Class names: `Kiosk`, `MenuItem`, `Menu` 
 - **Features**
-  - Displays the entire burger menu to the user including the name, cost, and brief information 
-  - Informs the user of the selected menu item
-  - Exits the program if zero or a number outside the menu index range is input
-- **Usage**: Receives two integers from the user—one for the main menu index and the other for the submenu item index
+  - Provides the same functions as level 4
+  - Includes private access modifiers, and getter and setter methods for better information security
+- **Usage**: Receives two integers from the user—one for the main menu index and the other for the item index
 
 ## 📜 More Information
 - [Visit Development Journal](https://writingforever162.tistory.com)
